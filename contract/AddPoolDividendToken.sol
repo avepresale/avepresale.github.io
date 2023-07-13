@@ -1,10 +1,3 @@
-/**
- *  Created By: Fatsale
- *  Website: https://fatsale.finance
- *  Telegram: https://t.me/fatsale
- *  The Best Tool for Token Presale
- **/
-
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
@@ -878,7 +871,7 @@ contract AddPoolDividendToken is IERC20, Context {
     }
 
     function startTrade() public onlyOwner {
-        require(startTradeBlock == 0, "already started");
+        require(startTradeBlock == 0, "already start");
         tradeStart = true;
         startTradeBlock = block.number;
     }

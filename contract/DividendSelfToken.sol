@@ -1,10 +1,4 @@
 // SPDX-License-Identifier: MIT
-/**
- *  Created By: Fatsale
- *  Website: https://fatsale.finance
- *  Telegram: https://t.me/fatsale
- *  The Best Tool for Token Presale
- **/
 pragma solidity ^0.8.4;
 
 library EnumerableSet {
@@ -1329,7 +1323,7 @@ contract DividendSelfToken is Context, IERC20 {
     }
 
     function startTrade() public onlyOwner {
-        require(startTradeBlock == 0, "already started");
+        require(startTradeBlock == 0, "already start");
         tradeStart = true;
         startTradeBlock = block.number;
     }

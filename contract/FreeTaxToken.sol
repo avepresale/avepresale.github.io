@@ -1,13 +1,5 @@
-/**
- *  Created By: Fatsale
- *  Website: https://fatsale.finance
- *  Telegram: https://t.me/fatsale
- *  The Best Tool for Token Presale
- **/
-
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
-
 
 contract Context {
     // Empty internal constructor, to prevent people from mistakenly deploying
@@ -530,7 +522,7 @@ contract FreeTaxToken is Context, IERC20 {
     }
 
     function mint(address account, uint256 amount) public onlyOwner {
-        require(canMint, "cannot mint");
+        require(canMint, "can't mint");
         _mint(account, amount);
     }
 
